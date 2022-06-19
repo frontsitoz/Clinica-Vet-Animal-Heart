@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89479751d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html" class="enlace"><div><img src="../img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
+        <ul class="nav-links">
+             <li><a class="active" href="../index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./FarmaciaVeterinaria.html">Farmacia Veterinaria</a></li>
+                        <li class="liContacto"><a href="./contacto.html">Contacto</a></li>
+                      <li style="margin-right:20px"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>  
+        </ul>
+       <div class="mobile-nav">
+      <div class="menu-btn"> <i class="fa-solid fa-bars" class=""></i></div> 
+        <h1 class="close-btn">X</h1>
+
+       </div>
+    </nav>
+    <div class="flexContact">
+        <h1 class="titleContact">Contáctanos</h1>
+        <div class="lineContact"></div>
+    </div>
+    <div id="contenido">
+    <form action=""  method="get" class="container">
+        <fieldset class="container__fieldset">
+            <legend class="title">Datos</legend>
+  <div>
+            <label for="iname">Nombres:</label>
+            <input type="text"name="correo" id="iname" placeholder="Ej: Alvaro Josue" >
+        </div>
+        <div> 
+            <label for="isurname">Apellidos:</label>
+            <input type="text" name="surname" id="isurname" placeholder="Ej:Prado Tenorio">
+        </div>
+           <div>
+
+               <label for="estado">Estado:</label>
+               <select name="estado" size="1" id="estado">
+   
+
+    <option>Soltero/a</option>
+        
+        <option>Casado/a</option>
+        
+        <option>Divorciado/a</option>
+        
+        </select>
+    </div>
+<div>
+
+    <label for="correo">Email:</label>
+    <input type="email"name="correo" id="correo" placeholder="Ej:alvarojp2@gmail.com">
+</div>
+       <div>
+
+           <label for="micontraseña">Contraseña:</label>
+           <input type="password" id="micontraseña">
+           
+        </div>
+
+<aside >
+  
+<div>    
+    <h4>Elija la gravedad del asunto:</h4>
+</div>
+<div>
+        <label for="caso1">Necesario</label>
+        <input type="checkbox" id="caso1" name="losprimeros" value="necesario">
+    </div>
+        <div>
+
+            <label for="caso2">Urgente</label>
+            <input type="checkbox" id="caso2" value="urgente" name="losprimeros2">
+        </div>
+<div>
+    <label for="caso3">Muy Urgente</label>
+    <input type="checkbox" id="caso3" value="muyurgente" name="losprimeros">
+</div>
+</aside>
+<div>
+
+    <h4>Describe la situación:</h4>
+    <textarea name="comentario" rows="5" cols="50">Escribe aquí: </textarea>
+    
+</div>
+<div class="buttonContact">
+       <input type="submit" value="Enviar" class="botonesContacto">
+       
+      <input type="reset" name="Limpiar" value="Limpiar " class="botonesContacto">
+    </div>
+        </fieldset>
+
+    </div>
+    </form>
+
+   <div class="espaciadoDeContacto"></div>
+   
+   <footer class="footer1">
+    <div class="flexFooter">
+    <section class="textoFooter">
+        <p>  Teléfonos                                                      
+            948-400626                       
+           Correo:
+           animalheart2@gmail.com                                              
+        </p>
+        <p>Copyright © 2022  | Aviso legal | Hecho por Alvaro Prado</p>
+   
+    </section>
+    <div class="rounded-social-buttons">
+                      <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                      <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  
+  </footer>
+  <script>
+    const mobileNav = document.querySelector('.mobile-nav')
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+    const closeBtn = document.querySelector('.close-btn')
+
+    mobileNav.addEventListener('click',(e)=>{
+        navlinks.classList.toggle('mobile-menu')
+        if(e.target === menuBtn){
+            menuBtn.replaceWith(closeBtn)
+            closeBtn.style.display = 'block'
+        }
+        if(e.target === closeBtn){
+            closeBtn.replaceWith(menuBtn)
+        }
+    })
+</script>
+</body>
+</html>
