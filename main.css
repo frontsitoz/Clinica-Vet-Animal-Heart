@@ -187,7 +187,15 @@ p {
 margin-bottom:20px;
   }
 
-
+  .about__img{
+   
+    -webkit-transition: 1s linear;
+    transition: 0.5s linear;
+  }
+  .about__img:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+  }
 
 .explore-content {
     width: 60%;
