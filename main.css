@@ -609,10 +609,16 @@ background-color: rgb(25 81 151 / 87%);
   margin: 0 10px;
   border: solid 3px;
   border-color: #E6F3E3;
+
   transition: all 0.5s ease-in-out;
 }
 
 .ourteam__item:hover {
+  transform: skew(8deg, 5deg);
+  transition:scale(0.5seg);
+ 
+
+
   border-color: #4ab1ff;
 }
 
