@@ -1,100 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>servicios</title>
-    <link rel="stylesheet" href="../main.css">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../CSS/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89479751d0.js" crossorigin="anonymous"></script>
+<style>
+  h1,h3{
+    animation: jackInTheBox;/* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+    
+  }
+</style>
+
 </head>
 <body>
-  <nav class="navbar">
-    <a href="./index.html" class="enlace"><div><img src="../img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
-    <ul class="nav-links">
-         <li><a class="active" href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./FarmaciaVeterinaria.html">Farmacia Veterinaria</a></li>
-                    <li class="liContacto"><a href="./contacto.html">Contacto</a></li>
-                  <li style="margin-right:20px"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>  
-    </ul>
-   <div class="mobile-nav">
-  <div class="menu-btn"> <i class="fa-solid fa-bars" class=""></i></div> 
-    <h1 class="close-btn">X</h1>
-   </div>
-</nav>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white fondoPr" id="menu">
+      <div class="container-fluid">
+      <a href="../index.html" class="enlace"><div><img src="../assets/img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav lead align-items-center">
+           <li class="nav-item"><a class="nav-link fw-bold" href="../index.html"  class="nav-active" aria-current="page">Inicio</a></li>
+                      <li class="nav-item "><a class="nav-link fw-bold " href="../HTML/nosotros.html">Nosotros</a></li>
+                      <li class="nav-item"><a  class="nav-link fw-bold" href="../HTML/servicios.html">Servicios</a></li>
+                      <li class="nav-item"><a  class="nav-link fw-bold" href="../HTML/FarmaciaVeterinaria.html">Farmacia Veterinaria</a></li>
+                      <li class="nav-item liContacto p-1"><a  class="nav-link fw-bold d-inline" href="../HTML/contacto.html">Contacto</a></li>
+                  
+               
+      </ul>
+    </div>
+  </div>
+  </nav>
+  </header>
 
 <header class="headerServices" >
   <div class="fondoSeccion">
-      <h1>SERVICIOS</h1>
-      <h2 style="margin-top:30px";>Profesionales de alta calidad </h2>
-      <div class="line"></div>
+      <h1 class="mb-sm-0">SERVICIOS</h1>
+      <div class="line mt-sm-0"></div>
+      <h3 style="margin-top:30px; display:flex ; justify-content:center";>Profesionales de alta calidad </h3>
+      
    <div style="display: flex; justify-content:center; margin-top:50px; font-weight: bold;">  <a href="../HTML/contacto.html" class="ctn">CONTÁCTANOS</a></div> 
   </div>
 </header>
 
-   
-         
+   <h2 class="text-center fw-bold fs-2 " style="color:#456da9 ;margin: 20px">Lo que ofrecemos a nuestros amigos animales</h2>
+   <div class="line"></div>
+   <hr>
+   <div style="display:flex; justify-content:center">
+   <p style="width:70%">En Clínica Veterinaria Animal Heart ofrecemos una asistencia completa y de calidad a tu mascota. Nuestro principal objetivo es mantener la salud y el bienestar de nuestros animales y ayudarlos a restablecerse cuando están enfermos. Para ello, contamos con un personal altamente cualificado e instalaciones modernas y bien equipadas.</p>
+  </div>
           <ul class="cards">
             <li class="cards_item">
               <div class="card">
-                <div class="card_image"><img src="../img/foto1.jpg"></div>
+                <div class="card_image"><img src="../assets/img/imagenLarga.jpg"></div>
                 <div class="card_content">
-                  <h2 class="card_title">Servicio 1</h2>
-                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima laborum maiores quam ipsam tempore soluta ab eligendi.</p>
-                  <button class="btn card_btn">Ver más</button>
+                  <h2 class="card_title">Medicina Preventiva</h2>
+                  <p class="card_text">Acércate y pregunta sobre cualquiere duda que tengas sobre tu mascota.</p>
+              <div class="botonServices">   <button class="btn card_btn">Ver más</button></div> 
                 </div>
               </div>
             </li>
             <li class="cards_item">
               <div class="card">
-                <div class="card_image"><img src="../img/foto2.jpg"></div>
+                <div class="card_image"><img src="../assets/img/imagenLarga4.jpg"></div>
                 <div class="card_content">
-                  <h2 class="card_title">Servicio 2</h2>
-                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima laborum maiores quam ipsam tempore soluta ab eligendi.</p>
-                  <button class="btn card_btn">Ver más</button>
+                  <h2 class="card_title">Radiología Digital</h2>
+                  <p class="card_text">Analizamos el estado de los tejidos blandos  si están sanos.</p>
+                  <div class="botonServices">      <button class="btn card_btn">Ver más</button></div> 
                 </div>
               </div>
             </li>
             <li class="cards_item">
               <div class="card">
-                <div class="card_image"><img src="../img/foto3.jpg"></div>
+                <div class="card_image"><img src="../assets/img/imagenServices.jpg"></div>
                 <div class="card_content">
-                  <h2 class="card_title">Servicio 3</h2>
-                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima laborum maiores quam ipsam tempore soluta ab eligendi.</p>
-                  <button class="btn card_btn">Ver más</button>
+                  <h2 class="card_title">Medicina Interna</h2>
+                  <p class="card_text">Engloba el estudio y tratamiento de todas las enfermedades.</p>
+                  <div class="botonServices">   <button class="btn card_btn">Ver más</button></div> 
                 </div>
               </div>
             </li>
             <li class="cards_item">
               <div class="card">
-                <div class="card_image"><img src="../img/foto4.jpg"></div>
+                <div class="card_image"><img src="../assets/img/estirilizacion.jpg"></div>
                 <div class="card_content">
-                  <h2 class="card_title">Servicio 4</h2>
-                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima laborum maiores quam ipsam tempore soluta ab eligendi.</p>
-                  <button class="btn card_btn">Ver más</button>
+                  <h2 class="card_title">Dermatología</h2>
+                  <p class="card_text">Cuida la piel de tu mascota todo el año y haz que tenga una piel sana y fuerte.</p>
+                  <div class="botonServices">      <button class="btn card_btn">Ver más</button></div> 
                 </div>
               </div>
             </li>
             <li class="cards_item">
               <div class="card">
-                <div class="card_image"><img src="../img/foto5.jpg"></div>
+                <div class="card_image"><img src="../assets/img/foto5.jpg"></div>
                 <div class="card_content">
-                  <h2 class="card_title">Servicio 5</h2>
-                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima laborum maiores quam ipsam tempore soluta ab eligendi.</p>
-                  <button class="btn card_btn">Ver más</button>
+                  <h2 class="card_title">Medicina Felina</h2>
+                  <p class="card_text">Clínica amiga de los gatos. Salas independientes para cada especie animal.</p>
+                  <div class="botonServices">   <button class="btn card_btn">Ver más</button></div>
                 </div>
               </div>
             </li>
+
             <li class="cards_item">
               <div class="card">
-                <div class="card_image"><img src="../img/foto6.jpg"></div>
+                <div class="card_image"><img src="../assets/img/cirugia2.jpeg"></div>
                 <div class="card_content">
-                  <h2 class="card_title">Servicio 6</h2>
-                  <p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia saepe dignissimos enim animi facilis nam excepturi.</p>
-                  <button class="btn card_btn">Ver más</button>
+                  <h2 class="card_title">Cirugía Tejidos Blandos</h2>
+                  <p class="card_text">Altamente capacitados para cualquier tipo de cirugía.</p>
+                  <div class="botonServices">   <button class="btn card_btn">Ver más</button></div>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="../assets/img/cirugia3.jpg"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Cirugía Láser</h2>
+                  <p class="card_text">Somos especialistas en Síndrome Braquicefálico.</p>
+                  <div class="botonServices">    <button class="btn card_btn">Ver más</button></div>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="../assets/img/cirugia4.jpg"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Obstetricia y Reproducción</h2>
+                  <p class="card_text">Atención completa e inmediata al cachorro en todo momento.</p>
+                  <div class="botonServices">   <button class="btn card_btn">Ver más</button></div>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="../assets/img/cirugia5.jpg"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Endoscopia digestiva y respiratoria</h2>
+                  <p class="card_text">Ofrecemos ditintos tipos de endoscopia, dependiendo del caso.</p>
+                  <div class="botonServices"><button class="btn card_btn">Ver más</button></div>
                 </div>
               </div>
             </li>
@@ -127,21 +185,5 @@
                             </div>
                             
             </footer>
-            <script>
-              const mobileNav = document.querySelector('.mobile-nav')
-              const menuBtn = document.querySelector('.menu-btn')
-              const navlinks = document.querySelector('.nav-links')
-              const closeBtn = document.querySelector('.close-btn')
-          
-              mobileNav.addEventListener('click',(e)=>{
-                  navlinks.classList.toggle('mobile-menu')
-                  if(e.target === menuBtn){
-                      menuBtn.replaceWith(closeBtn)
-                      closeBtn.style.display = 'block'
-                  }
-                  if(e.target === closeBtn){
-                      closeBtn.replaceWith(menuBtn)
-                  }
-              })
-          </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>

@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Veterinaria</title>
- <link rel="stylesheet" href="../main.css">
+ <link rel="stylesheet" href="../CSS/main.css">
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
  <script src="https://kit.fontawesome.com/89479751d0.js" crossorigin="anonymous"></script>
  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="./index.html" class="enlace"><div><img src="../img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
-        <ul class="nav-links">
-             <li><a class="active" href="../index.html">Inicio</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./FarmaciaVeterinaria.html">Farmacia Veterinaria</a></li>
-                        <li class="liContacto"><a href="./contacto.html">Contacto</a></li>
-                      <li style="margin-right:20px"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>  
-        </ul>
-       <div class="mobile-nav">
-      <div class="menu-btn"> <i class="fa-solid fa-bars" class=""></i></div> 
-        <h1 class="close-btn">X</h1>
-       </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white fondoPr" id="menu">
+          <div class="container-fluid">
+          <a href="../index.html" class="enlace"><div><img src="../assets/img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav lead align-items-center">
+               <li class="nav-item"><a class="nav-link fw-bold" href="../index.html"  class="nav-active" aria-current="page">Inicio</a></li>
+                          <li class="nav-item "><a class="nav-link fw-bold " href="../HTML/nosotros.html">Nosotros</a></li>
+                          <li class="nav-item"><a  class="nav-link fw-bold" href="../HTML/servicios.html">Servicios</a></li>
+                          <li class="nav-item"><a  class="nav-link fw-bold" href="../HTML/FarmaciaVeterinaria.html">Farmacia Veterinaria</a></li>
+                          <li class="nav-item liContacto p-1"><a  class="nav-link fw-bold d-inline" href="../HTML/contacto.html">Contacto</a></li>
+                      
+                   
+          </ul>
+        </div>
+      </div>
+      </nav>
+      </header>
    
-        <h1 class="titleFarmacy" style="margin-left:20px ;">Farmacia Veterinaria</h1>
-        <div class="lineFarmacy"></div>
-        <div class="buscador">
+        <h1 class="titleFarmacy mb-sm-0" style="margin-left:20px ;">Farmacia Veterinaria</h1>
+        <div class="lineFarmacy mt-sm-0" ></div>
+        <div class="buscador mt-sm-3">
          <div class="wrap">
           <div class="search">
-             <input type="text" class="searchTerm" placeholder="Busca tus productos">
+             <input type="text" class="searchTerm pt-sm-0 pb-sm-0" placeholder="Busca tus productos">
              <button type="submit" class="searchButton">
                <i class="fa fa-search"></i>
             </button>
@@ -87,10 +97,10 @@
             <div class="box-container">
                 <div class="box">
                     <div class="image">
-                        <img src="../img/Bravecto-56kg.jpg" alt="">
+                        <img src="../assets/img/Bravecto-56kg.jpg" alt="">
                     </div>
                     <div class="info">
-                        <h3>Lorem, ipsum dolor.</h3>
+                        <h3>Bravecto Fucsia</h3>
                       
                     </div>
                     <div class="btn">
@@ -100,10 +110,10 @@
     
                 <div class="box">
                     <div class="image">
-                        <img src="../img/bactrina-Tableta.jpg" alt="">
+                        <img src="../assets/img/Clavaseptin500.jpg" alt="">
                     </div>
                     <div class="info">
-                        <h3>Lorem, ipsum dolor.</h3>
+                        <h3>Clavaseptin 500mg</h3>
                      
                     </div>
                     <div class="btn">
@@ -113,10 +123,10 @@
 
                 <div class="box">
                   <div class="image">
-                      <img src="../img/Advantix.jpg" alt="">
+                      <img src="../assets/img/Advantix.jpg" alt="">
                   </div>
                   <div class="info">
-                      <h3>Lorem, ipsum dolor.</h3>
+                      <h3>Advantix Rojo</h3>
                   
                   </div>
                   <div class="btn">
@@ -126,10 +136,10 @@
 
               <div class="box">
                 <div class="image">
-                    <img src="../img/bravecto-gato-cachorro.jpg" alt="">
+                    <img src="../assets/img/bravecto-gato-cachorro.jpg" alt="">
                 </div>
                 <div class="info">
-                    <h3>Lorem, ipsum dolor.</h3>
+                    <h3>Bravecto 1.2 - 2.8kg</h3>
                   
                 </div>
                 <div class="btn">
@@ -139,10 +149,10 @@
       
                 <div class="box">
                     <div class="image">
-                        <img src="../img/Cefavet600-300x167.jpg" alt="">
+                        <img src="../assets/img/Cefavet600-300x167.jpg" alt="">
                     </div>
                     <div class="info">
-                        <h3>Lorem, ipsum dolor.</h3>
+                        <h3>Cefavet 600mg</h3>
                     
                     </div>
                     <div class="btn">
@@ -152,10 +162,10 @@
 
                 <div class="box">
                   <div class="image">
-                      <img src="../img/Bravecto-Azul.jpg" alt="">
+                      <img src="../assets/img/Bravecto-Azul.jpg" alt="">
                   </div>
                   <div class="info">
-                      <h3>Lorem, ipsum dolor.</h3>
+                      <h3>Bravecto Azul</h3>
                   
                   </div>
                   <div class="btn">
@@ -165,10 +175,10 @@
 
               <div class="box">
                 <div class="image">
-                    <img src="../img/FeloviteII.jpg" alt="">
+                    <img src="../assets/img/FeloviteII.jpg" alt="">
                 </div>
                 <div class="info">
-                    <h3>Lorem, ipsum dolor.</h3>
+                    <h3>Felovite</h3>
                 
                 </div>
                 <div class="btn">
@@ -178,10 +188,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/Lubricel15.jpg" alt="">
+                  <img src="../assets/img/Lubricel15.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Lubricell</h3>
                
               </div>
               <div class="btn">
@@ -191,10 +201,10 @@
     
             <div class="box">
               <div class="image">
-                  <img src="../img/pipeta-8kg.jpg" alt="">
+                  <img src="../assets/img/Bravecto-Amarillo.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Bravecto Amarillo</h3>
                 
               </div>
               <div class="btn">
@@ -205,10 +215,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/pipeta-hasta4kg.jpg" alt="">
+                  <img src="../assets/img/pipeta-hasta4kg.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Meltra spot on hasta 4kg</h3>
                
               </div>
               <div class="btn">
@@ -219,10 +229,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/bravecto-gato-cachorro.jpg" alt="">
+                  <img src="../assets/img/bravecto-gato.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Bravecto 6.25 -12.5kg</h3>
                 
               </div>
               <div class="btn">
@@ -233,10 +243,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/Revolution-Verde.jpg" alt="">
+                  <img src="../assets/img/Revolution-Verde.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Revolution Verde</h3>
                 
               </div>
               <div class="btn">
@@ -247,10 +257,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/Posatex.jpg" alt="">
+                  <img src="../assets/img/Posatex.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Posatex 8.8ml</h3>
                 
               </div>
               <div class="btn">
@@ -261,10 +271,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/Nutrical1.png" alt="">
+                  <img src="../assets/img/Nutrical1.png" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Nutrical</h3>
                 
               </div>
               <div class="btn">
@@ -275,10 +285,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/Revolution-Marron.jpg" alt="">
+                  <img src="../assets/img/Revolution-Marron.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Revolution Marron</h3>
               
               </div>
               <div class="btn">
@@ -289,10 +299,10 @@
 
             <div class="box">
               <div class="image">
-                  <img src="../img/bactrina-Tableta.jpg" alt="">
+                  <img src="../assets/img/bactrina-Tableta.jpg" alt="">
               </div>
               <div class="info">
-                  <h3>Lorem, ipsum dolor.</h3>
+                  <h3>Bactrina Tabletas</h3>
                 
               </div>
               <div class="btn">
@@ -302,10 +312,10 @@
 
           <div class="box">
             <div class="image">
-                <img src="../img/Revolution-Rojo.jpg" alt="">
+                <img src="../assets/img/Revolution-Rojo.jpg" alt="">
             </div>
             <div class="info">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Revolution Rojo</h3>
               
             </div>
             <div class="btn">
@@ -315,10 +325,10 @@
 
         <div class="box">
             <div class="image">
-                <img src="../img/Posatex.jpg" alt="">
+                <img src="../assets/img/Tobramax.jpg" alt="">
             </div>
             <div class="info">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Tobramax 5ml</h3>
               
             </div>
             <div class="btn">
@@ -328,10 +338,10 @@
 
         <div class="box">
             <div class="image">
-                <img src="../img/Revolution-Marron.jpg" alt="">
+                <img src="../assets/img/Otiflex-Limpiador.jpg" alt="">
             </div>
             <div class="info">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Otiflex Limpiador 100ml</h3>
               
             </div>
             <div class="btn">
@@ -341,10 +351,10 @@
 
         <div class="box">
             <div class="image">
-                <img src="../img/Floxatel100-300x133.jpg" alt="">
+                <img src="../assets/img/Floxatel100-300x133.jpg" alt="">
             </div>
             <div class="info">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Floxatel 100mg</h3>
               
             </div>
             <div class="btn">
@@ -354,10 +364,10 @@
 
         <div class="box">
             <div class="image">
-                <img src="../img/Revolution-Verde.jpg" alt="">
+                <img src="../assets/img/bravecto-verde.jpg" alt="">
             </div>
             <div class="info">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Bravecto Verde</h3>
               
             </div>
             <div class="btn">
@@ -365,6 +375,57 @@
             </div>
         </div>
 
+        <div class="box">
+            <div class="image">
+                <img src="../assets/img/Ecaderm-Spray.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3>Ecaderm 500ml</h3>
+              
+            </div>
+            <div class="btn">
+                <a href="">Click</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../assets/img/Apoquel.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3>Apoquel 16mg</h3>
+              
+            </div>
+            <div class="btn">
+                <a href="">Click</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../assets/img/Advantix-celeste.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3>Adavantix Celeste</h3>
+              
+            </div>
+            <div class="btn">
+                <a href="">Click</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../assets/img/Meloxivet-gotas.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3>Meloxivet gotas 10ml</h3>
+              
+            </div>
+            <div class="btn">
+                <a href="">Click</a>
+            </div>
+        </div>
 
             </div>
        
@@ -394,23 +455,7 @@
               
           </footer>
 
-          <script>
-            const mobileNav = document.querySelector('.mobile-nav')
-            const menuBtn = document.querySelector('.menu-btn')
-            const navlinks = document.querySelector('.nav-links')
-            const closeBtn = document.querySelector('.close-btn')
-    
-            mobileNav.addEventListener('click',(e)=>{
-                navlinks.classList.toggle('mobile-menu')
-                if(e.target === menuBtn){
-                    menuBtn.replaceWith(closeBtn)
-                    closeBtn.style.display = 'block'
-                }
-                if(e.target === closeBtn){
-                    closeBtn.replaceWith(menuBtn)
-                }
-            })
-        </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 </html>
