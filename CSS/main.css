@@ -382,8 +382,7 @@ button {
 }
 
 .hero {
-  grid-area: hero;
-  min-height: 600px;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 16, 16, .4)) , url(../assets/img/imagenVeterinarios.jpg);
   background-size: cover;
   padding: 50px;
@@ -392,6 +391,7 @@ button {
   align-items: start;
   justify-content: center;
   margin-top: 20px;
+  background-position: top;
 }
 
 /* NAVIGATION */
@@ -668,7 +668,7 @@ padding-top: 50px;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(16, 16, 16, .3)) , url("../assets/img/fondoCarrusel4.jpg");
 color:white;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   display:flex;
   flex-direction: column;
@@ -778,6 +778,9 @@ border-radius: 30px;
   .cards_item {
     width: 50%;
   }
+  .hero{
+    min-height: 70vh;
+  }
 }
 /*index:
 /*tablet*/
@@ -833,6 +836,7 @@ border-radius: 30px;
       }
       .cards_item {
         width: 60%;
+ 
       }
 
       .features {
@@ -1055,7 +1059,17 @@ max-width: 100%;
 width: 600px;
 height: 250px;
   }
-
+/*Servicios*/
+.headerServices{
+  height:55vh;
+}
+.fondoSeccion{
+  height:55vh;
+}
+/*Nosotros*/
+.hero{
+  min-height: 40vh;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -1079,5 +1093,20 @@ height: 250px;
   .miIcon{
     width:300px;
   }
+/*Servicios*/
+
+.fondoSeccion{
+  height:35vh;
+}
+
+.headerServices{
+  width:100%;
+  height:40vh;
+}
+/*Nosotros*/
+.hero{
+  min-height: 300px;
+}
+
 }
 }
