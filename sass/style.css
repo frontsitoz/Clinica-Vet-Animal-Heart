@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Sniglet&display=swap');
 *,
 *::before,
 ::after {
@@ -7,9 +6,9 @@
   padding: 0;
 }
 
-body,html {
-  font-family: 'Patrick Hand SC', cursive;
-  font-family: 'Sniglet', cursive;
+body, html {
+  font-family: "Patrick Hand SC", cursive;
+  font-family: "Sniglet", cursive;
   color: #456da9;
   line-height: 1.5;
 }
@@ -18,6 +17,7 @@ body,html {
   max-width: 1170px;
   margin: 0 auto 1rem;
   padding: 1.5rem;
+  margin-bottom: 40px;
 }
 
 /* Navbar */
@@ -93,10 +93,9 @@ yyy #menu a {
 .info-empresa {
   padding: 1rem;
   background-color: #f3f6fa;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:space-around;
-
+  justify-content: center;
 }
 .info-empresa h3 {
   text-align: center;
@@ -180,12 +179,6 @@ yyy #menu a {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.337254902);
 }
 
-.rounded-social-buttons{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
 .rounded-social-buttons .social-button {
   display: inline-block;
   position: relative;
@@ -246,10 +239,8 @@ yyy #menu a {
 }
 
 .footer1 {
-  background-color: rgb(25 81 151 / 87%);
-  display: grid;
-  padding: 30px;
-  grid-template-columns: 62% 1fr;
+  padding-top: 10px;
+  background-color: rgba(25, 81, 151, 0.87);
 }
 
 .flexFooter {
@@ -279,15 +270,15 @@ yyy #menu a {
   .nav-links li {
     margin-right: 5px;
   }
+
   .miIcon {
     margin-top: 10px;
     min-width: 300px;
     margin-right: 0px;
     position: static;
   }
+
   #menu a {
     font-size: 16px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

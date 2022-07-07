@@ -32,7 +32,7 @@
   <nav class="navbar navbar-expand-lg bg-white fondoPr" id="menu">
     <div class="container-fluid">
     <a href="./index.html" class="enlace"><div><img src="./assets/img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -60,17 +60,19 @@
     <div class="carousel-inner carousel-inner shadow p-0.99 mb-5 bg-dark rounded">
     
     
-      <div class="carousel-item active ">
+      <div class="carousel-item active">
         <div class="carousel-caption text-start text-white fs-1" style="top: 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: column;">
           <div>
           <h1 class="text-center fw-bold"  style="margin-bottom:0px">Animal Heart</h1>
+          <div class="line2"></div>
         </div>
-          <h3 class="text-center fw-bold" style="text-align: center!important; margin-bottom: 50px;">Trabajamos por el cuidado de tu mascota</h2>
-          <p><a class="btn btn-lg btn-secondary d-inline text-dark" href="./HTML/contacto.html">contáctanos</a></p>
+        <h3 class="text-center fw-bold" style="text-align: center!important; margin-bottom: 0px;">Trabajamos por el cuidado de tu mascota</h2>
+          <span class="line2"></span>
+          <p><a class="btn btn-lg d-inline text-dark" href="./HTML/contacto.html">contáctanos</a></p>
         </div>
         <img src="./assets/img/header-bg.png" class="d-block w-100 img-fluid" alt="...">
         <div class="container3">
@@ -78,12 +80,16 @@
         </div>
     
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item ">
         <img src="./assets/img/bg2.png" class="d-block w-100" alt="...">
         <div class="container3">
-          <div class="carousel-caption">
+          <div class="carousel-caption" style="top: 0px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;">
             <h1 class="fw-bold text-white">#SOMOS EL 2DO HOGAR DE TU MASCOTA</h1>
-            <h4 class="text-info">Promociones y Descuentos los Sábados y Domingos</h4>
+            <h4 style="color:rgb(133, 95, 44);background-color:rgba(58, 229, 229, 0.879);border-radius:45px; font-size:2em;text-transform: uppercase; opacity:0.8;padding:25px;">Promociones y Descuentos en todos los productos de Farmacia Veterinaria los Sábados</h4>
             <p><a class="btn btn-lg btn-secondary d-inline text-dark" href="#">Ver más</a></p>
           </div>
         </div>
@@ -152,17 +158,19 @@
     <div class="gallary__grid grid container">
       
         <div class="gallary__item">
+       <a href="#" class="hero__cta">  <img src="./assets/img/panchoCavero.jpg" alt=""></a> 
+          <div class="gallary__item__description">
+            <h4>Fundador</h4>
+          </div>
+        </div>
+
+
+
+      
+        <div class="gallary__item">
           <img src="./assets/img/donacion.jpg" alt="">
           <div class="gallary__item__description">
             <h4>Donaciones</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi placeat <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-      
-        <div class="gallary__item">
-          <img src="./assets/img/panchoCavero.jpg" alt="">
-          <div class="gallary__item__description">
-            <h4>Fundador</h4>
          
           </div>
         </div>
@@ -229,6 +237,18 @@
     </div>
    
   </section>
+
+  <section class="modal">
+    <div class="modal__container">
+   
+    <img src="./assets/img/panchoCavero.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Hola, soy Pancho Cavero</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+ <a href="#" class="modal__close">Cerrar modal</a>
+</div>
+</section>
+
   <hr>
   <section class="ourteam text-center bg-aqua pt-lg-5 pl-lg-2">
     <div class="ourteam__title  ">
@@ -270,19 +290,22 @@
 
   
     </div>
+    
     <div class="footer__right">
       <footer class="footer1">
         <div class="flexFooter">
         <section class="textoFooter">
+
             <p class="primeraLinea">  Teléfonos         :
                                                          
-              982059985                   
+                948-400626                       
                Correo:
                animalheart2@gmail.com                                              
             </p>
-            <p>Copyright © 2022  | Aviso legal | Hecho por Alvaro Prado</p>
-         
-            
+            <p> Aviso legal | Hecho por Alvaro Prado</p>
+            <p>Horario de atención: Lunes a Sabado - 8 a.m. - 8 p.m. </p>
+          </div>
+       
         </section>
         <div class="rounded-social-buttons">
                           <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -292,13 +315,10 @@
                           <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                       </div>
                       
-    
+      </footer>
     </div>
-   </div>
-  </footer>
   
-
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+  </body>
 </html>
