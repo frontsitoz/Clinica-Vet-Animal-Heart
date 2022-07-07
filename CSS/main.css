@@ -147,7 +147,7 @@ p, .comunity {
 }
 
 /*Modal*/
-.modal{
+.modal, .modal2{
   position:fixed;
   top: 0;
   left: 0;
@@ -157,14 +157,16 @@ p, .comunity {
   display: flex;
   opacity: 0;
   pointer-events: none;
+  transition: opacity .6s;
 }
 
 .modal--show{
 opacity: 1;
 pointer-events:unset ;
+transition: opacity .6s;
 }
 
-.modal__container{
+.modal__container, .modal__container2{
   margin: auto;
   width: 50%;
 max-width: 60%;
@@ -193,7 +195,7 @@ grid-auto-columns: 100%;
  
 }
 
-.modal__close{
+.modal__close, .modal__close2{
   text-decoration: none;
   color:white;
   background-color:#f26250;
