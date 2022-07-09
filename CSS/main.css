@@ -195,7 +195,7 @@ grid-auto-columns: 100%;
  
 }
 
-.modal__close, .modal__close2{
+.modal__close{
   text-decoration: none;
   color:white;
   background-color:#f26250;
