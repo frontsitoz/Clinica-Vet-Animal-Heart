@@ -93,7 +93,9 @@ h4 {
 }
 p, .comunity {
     color: #676767bf;
-    font-size: 18px;
+}
+.textoIndex{
+  font-size: 18px;
 }
 .events .ctn {
     margin-top: 30px;
@@ -181,6 +183,7 @@ grid-auto-columns: 100%;
 
 .modal__title{
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .modal__paragraph{
@@ -192,7 +195,7 @@ grid-auto-columns: 100%;
   width:50%;
  max-width:80% ;
  max-height: 90%;
- 
+ min-width: 350px;
 }
 
 .modal__close{
@@ -242,7 +245,7 @@ grid-auto-columns: 100%;
 }
 .rounded-social-buttons{
   display:flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -545,6 +548,7 @@ margin-right: 10px;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding-top: 0px;
+  padding-left: 100px;
 }
 
 h2.miFuenteWe{
@@ -847,7 +851,7 @@ border-radius: 30px;
 
 .card_title {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -857,7 +861,7 @@ border-radius: 30px;
 
 .card_text {
   color: #ffffff;
-  font-size: 0.875rem;
+
   line-height: 1.5;
   margin-bottom: 1.25rem;    
   font-weight: 400;
@@ -903,7 +907,10 @@ border-radius: 30px;
     .cards_item {
       width: 50%;
     }
-   
+   /*Nosotros*/
+   .aboutWe{
+    grid-template-columns: 1fr;
+   }
  
     @media (max-width: 1000px) {
       .menu {
@@ -1007,7 +1014,25 @@ h2 {
   padding: 0 10px 20px;
   line-height: 1.4;
 }
+.footer1{
+  background-color: rgb(25 81 151 / 87%);
+    display: grid;
+    padding: 30px;
+    grid-template-columns:1fr;
 
+}
+.rounded-social-buttons{
+  display:flex;
+  align-items: center;
+  justify-content:space-evenly;
+  padding-top:30px;
+}
+.flexFooter{
+  text-align: center;
+}
+.textoFooter p{
+  font-size:17px
+}
 /*SERVICIOS-mobile*/
 .fondoSeccion{
 height: 65vh;
@@ -1183,6 +1208,9 @@ height: 250px;
   }
   .miIcon{
     width:300px;
+  }
+  .textoFooter p{
+    font-size:14px;
   }
 /*Servicios*/
 

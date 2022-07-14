@@ -289,5 +289,20 @@ yyy #menu a {
     font-size: 16px;
   }
 }
+@media only screen and (max-width:900px){
+	.footer1{
+		background-color: rgb(25 81 151 / 87%);
+		  display: grid;
+		  padding: 30px;
+		  grid-template-columns:1fr;
+	  
+	  }
+	  .rounded-social-buttons{
+		display:flex;
+		align-items: center;
+		justify-content:space-evenly;
+		padding-top:30px;
+	  }
+}
 
 /*# sourceMappingURL=style.css.map */
