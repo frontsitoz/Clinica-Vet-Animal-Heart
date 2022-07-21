@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Animate.css--> 
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <!--  Meta  -->
-  <meta charset="UTF-8" />
-  <title>Animal Heart</title>
- 
-  <!--  Styles  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
-
-  <!-- Font Awesome-->
-  <script src="https://use.fontawesome.com/f28c2cb418.js"></script>
- 
-  <script src="https://kit.fontawesome.com/89479751d0.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
-  
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Heart</title>
+    
+    <script src="https://kit.fontawesome.com/89479751d0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    
+    
 <style>
   h1,h2{
     animation:zoomInDown; 
@@ -49,6 +43,14 @@ ul {
   font-weight: bold;
 }
 
+
+html {
+  overflow-x: hidden;
+  font-family: 'Sniglet', cursive;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
 body {
   overflow-x: hidden;
   font-family: 'Sniglet', cursive;
@@ -61,13 +63,6 @@ body > h1 {
   color: #456da9;
 }
 
-html {
-  overflow-x: hidden;
-  font-family: 'Sniglet', cursive;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-}
 
 .header-content {
   padding-top: 0px;
@@ -141,6 +136,7 @@ h4 {
 
 p {
   color: rgba(103, 103, 103, 0.7490196078);
+  font-size: 18px;
 }
 
 .comunity {
@@ -371,7 +367,7 @@ p {
 
 .gallary__grid {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 150px);
+  grid-template-rows: repeat(4, 170px);
   grid-gap: 5px;
   padding: 10px;
 }
@@ -520,7 +516,7 @@ li:hover {
 @media (max-width: 1000px) {
   .menu {
     order: -1;
-    perspective: 800px;
+   
   }
   [aria-controls=menu-list] {
     display: block;
@@ -679,6 +675,7 @@ li:hover {
   h2 {
     text-align: center;
   }
+
   .header__container {
     grid-template-columns: 2fr 1fr;
     grid-gap: 5px;
@@ -747,377 +744,378 @@ li:hover {
   }
 }/*# sourceMappingURL=main2.css.map */
 </style>
-
-</head>
+    
+  </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg bg-white fondoPr" id="menu">
-    <div class="container-fluid">
-    <a href="./index.html" class="enlace"><div><img src="./assets/img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav lead align-items-center">
-         <li class="nav-item"><a class="nav-link fw-bold" href="./index.html"  class="nav-active" aria-current="page">Inicio</a></li>
-                    <li class="nav-item "><a class="nav-link fw-bold " href="./HTML/nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a  class="nav-link fw-bold" href="./HTML/servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a  class="nav-link fw-bold" href="./HTML/FarmaciaVeterinaria.html">Farmacia Veterinaria</a></li>
-                    <li class="nav-item liContacto p-1"><a  class="nav-link fw-bold d-inline" href="./HTML/contacto.html">Contacto</a></li>
-                
-             
-    </ul>
-  </div>
-</div>
-</nav>
-</header>
-<section class="container-fluid foo">
- 
-  <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="true">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white fondoPr" id="menu">
+      <div class="container-fluid">
+      <a href="./index.html" class="enlace"><div><img src="../Pagina de Veterinaria/assets/img/icono.png" alt="LogoPrincipal" class="miIcon"> </div></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right:10px">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav lead align-items-center">
+           <li class="nav-item"><a class="nav-link fw-bold" href="./index.html"  class="nav-active" aria-current="page">Inicio</a></li>
+                      <li class="nav-item "><a class="nav-link fw-bold " href="./HTML/nosotros.html">Nosotros</a></li>
+                      <li class="nav-item"><a  class="nav-link fw-bold" href="./HTML/servicios.html">Servicios</a></li>
+                      <li class="nav-item"><a  class="nav-link fw-bold" href="./HTML/FarmaciaVeterinaria.html">Farmacia Veterinaria</a></li>
+                      <li class="nav-item liContacto p-1"><a  class="nav-link fw-bold d-inline" href="./HTML/contacto.html">Contacto</a></li>
+                  
+               
+      </ul>
     </div>
-    <div class="carousel-inner carousel-inner shadow p-0.99 mb-5 bg-dark rounded">
-    
-    
-      <div class="carousel-item active">
-        <div class="carousel-caption text-start text-white fs-1" style="top: 0px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;">
-          <div>
-          <h1 class="text-center fw-bold"  style="margin-bottom:0px">Animal Heart</h1>
-          <div class="line2"></div>
-        </div>
-        <h3 class="text-center fw-bold" style="text-align: center!important; margin-bottom: 0px;">Trabajamos por el cuidado de tu mascota</h2>
-          <span class="line2"></span>
-          <p><a class="btn btn-lg d-inline text-dark" href="./HTML/contacto.html">contáctanos</a></p>
-        </div>
-        <img src="./assets/img/header-bg.png" class="d-block w-100 img-fluid" alt="...">
-        <div class="container3">
-        
-        </div>
-    
+  </div>
+  </nav>
+  </header>
+  <section class="container-fluid foo">
+ 
+    <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-item ">
-        <img src="./assets/img/bg2.png" class="d-block w-100" alt="...">
-        <div class="container3">
-          <div class="carousel-caption" style="top: 0px;
+      <div class="carousel-inner carousel-inner shadow p-0.99 mb-5 bg-dark rounded">
+      
+      
+        <div class="carousel-item active">
+          <div class="carousel-caption text-start text-white fs-1" style="top: 0px;
           display: flex;
-          justify-content: space-around;
+          justify-content: space-evenly;
           align-items: center;
           flex-direction: column;">
-            <h1 class="fw-bold text-white">#SOMOS EL 2DO HOGAR DE TU MASCOTA</h1>
-            <h4 style="color:rgb(133, 95, 44);background-color:rgba(58, 229, 229, 0.879);border-radius:45px; font-size:2em;text-transform: uppercase; opacity:0.8;padding:25px;">Promociones y Descuentos en todos los productos de Farmacia Veterinaria los Sábados</h4>
-            <p><a class="btn btn-lg btn-secondary d-inline text-dark" href="#">Ver más</a></p>
+            <div>
+            <h1 class="text-center fw-bold"  style="margin-bottom:0px">Animal Heart</h1>
+            <div class="line2"></div>
           </div>
-        </div>
-      
-      </div>
-    
-    <div class="carousel-item">
-        <img src="./assets/img/fondoCarrusel2.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
-
-
-  
-
-<section class="events">
-  <div class="title">
-      <h2 class="titleIndex fw-bold text-center" style="margin-top:35px">Brindamos la mejor atención a tu mascota</h2>
-      <div class="line"></div>
-  </div>
-  <div class="container">
-  <div class="row mt-5" style="padding-left: 0px">
-      <div class="col-lg-6 col-md-12 d-flex justify-content flex-column">
-          <img src="./assets/img/img1.png" alt="" >
-          <div class="text-center mb-5 fs-2">
-          <h4>Nuestro Equipo</h4>
-        
-          <p class="textoIndex">Somos más que una clínica, somos una familia que busca tu felicidad y la de tu mascota. Le brindamos a tu mascota seguridad y confianza.Tenemos profesionales A1, el 85% de nuestros veterinarios cuenta con más de 5 años de experiencia, contamos con equipos de última tecnología para 
-            la mayor comodidad y bienestar de tu mascota.
-          </p>
-          <a href="./HTML/nosotros.html#integrantes" class="ctn p-2">Ver más</a></div>
-      </div>
-      <div class="col-lg-6 col-md-12 d-flex justify-content flex-column">
-          <img src="./assets/img/img2.png" alt="" >
-          <div class="text-center fs-2">
-           
-          <h4 >Consejos/Comunidad</h4>
-          <div style="display:grid;grid-template-columns:1fr 1fr ">
-          <div >
-          <h5 class="fw-bold comunity">Para veterinarios</h5>
-          <p class="textoIndex"> -Protocolo Sanitario Covid<br>
-          -Programa de vacunación <br>
-        Tips para nuevo cachorro</p></div>
-       <div><h5 class="fw-bold comunity">Para clientes</h5>
-        <p class="textoIndex"> -Inseminación Artificial <br>
-        -Causas de vómitos <br>
-      -Síndrome brquicefálico canino</p></div> </div>
-          <a href="http://www.vetsandiego.com.pe/consejos/" class="ctn p-2">Ver más</a></div>
-      </div>
-  </div>
-</div>
-</section>
-  <hr>
-  <section class="gallary grid" >
-    <h2  class="titleIndex fw-bold" style="margin-top:30px">Galería</h2>
-    <div class="line"></div>
-    <div class="gallary__grid grid container">
-      
-        <div class="gallary__item">
-       <a href="#" class="hero__cta">  <img src="./assets/img/panchoCavero.jpg" alt=""></a> 
-          <div class="gallary__item__description">
-            <h4>Fundador</h4>
+          <h3 class="text-center fw-bold" style="text-align: center!important; margin-bottom: 0px;">Trabajamos por el cuidado de tu mascota</h2>
+            <span class="line2"></span>
+            <p><a class="btn btn-lg d-inline text-dark" href="../Pagina de Veterinaria/HTML/contacto.html">contáctanos</a></p>
           </div>
-        </div>
-        
-        <div class="gallary__item">
-        <a href="#" class="hero__cta hero__cta2"><img src="./assets/img/donacion.jpg" alt=""></a>
-          <div class="gallary__item__description">
-            <h4>Donaciones</h4>
-          </div>
-        </div>
-      
-        <div class="gallary__item">
-          <img src="./assets/img/imagenLarga4.jpg" alt="">
-          <div class="gallary__item__description">
-            <h4>Tips para mejorar la relación con tu mascota</h4>
-         
-          </div>
-        </div>
-      
-        <div class="gallary__item">
-          <img src="./assets/img/campaña.jpg" alt="" style="width:480px">
-          <div class="gallary__item__description">
-            <h4>Campañas</h4>
-         
-          </div>
-        </div>
-      
-        <div class="gallary__item">
-          <img src="./assets/img/imagenLarga.jpg" alt="">
-          <div class="gallary__item__description">
-            <h4>Operaciones</h4>
-      
-          </div>
-        </div>
-      
-        <div class="gallary__item">
-          <img src="./assets/img/foto2.jpg" alt="">
-          <div class="gallary__item__description">
-            <h4>Animales para Adoptar</h4>
-        
-          </div>
-        </div>
-      
-        <div class="gallary__item">
-          <img src="./assets/img/sede.jpg" alt="">
-          <div class="gallary__item__description">
-            <h4>Sedes</h4>
-         
-          </div>
-        </div>
-      
-        <div class="gallary__item">
-          <img src="./assets/img/veterinaria.jpg" alt="">
-          <div class="gallary__item__description">
-            <h4>Hechos Importantes</h4>
+          <img src="../Pagina de Veterinaria/assets/img/header-bg.png" class="d-block w-100 img-fluid" alt="...">
+          <div class="container3">
           
           </div>
+      
+        </div>
+        <div class="carousel-item ">
+          <img src="../Pagina de Veterinaria/assets/img/bg2.png" class="d-block w-100" alt="...">
+          <div class="container3">
+            <div class="carousel-caption" style="top: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;">
+              <h1 class="fw-bold text-white">#SOMOS EL 2DO HOGAR DE TU MASCOTA</h1>
+              <h4 style="color:rgb(133, 95, 44);background-color:rgba(58, 229, 229, 0.879);border-radius:45px; font-size:2em;text-transform: uppercase; opacity:0.8;padding:25px;">Promociones y Descuentos en todos los productos de Farmacia Veterinaria los Sábados</h4>
+              <p><a class="btn btn-lg btn-secondary d-inline text-dark" href="#">Ver más</a></p>
+            </div>
+          </div>
+        
         </div>
       
-        <div class="gallary__item">
-          <img src="./assets/img/imagenMain.jpg" alt="">
-          <div class="gallary__item__description">
-            <h4>Características</h4>
-            
-          </div>
+      <div class="carousel-item">
+          <img src="./assets/img/fondoCarrusel2.jpg" class="d-block w-100" alt="...">
         </div>
-        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </section>
+  
+  
     
   
+  <section class="events">
+    <div class="title">
+        <h2 class="titleIndex fw-bold text-center" style="margin-top:35px">Brindamos la mejor atención a tu mascota</h2>
+        <div class="line"></div>
     </div>
-   
+    <div class="container">
+    <div class="row mt-5" style="padding-left: 0px">
+        <div class="col-lg-6 col-md-12 d-flex justify-content flex-column">
+            <img src="./assets/img/img1.png" alt="" >
+            <div class="text-center mb-5 fs-2">
+            <h4>Nuestro Equipo</h4>
+          
+            <p class="textoIndex">Somos más que una clínica, somos una familia que busca tu felicidad y la de tu mascota. Le brindamos a tu mascota seguridad y confianza.Tenemos profesionales A1, el 85% de nuestros veterinarios cuenta con más de 5 años de experiencia, contamos con equipos de última tecnología para 
+              la mayor comodidad y bienestar de tu mascota.
+            </p>
+            <a href="./HTML/nosotros.html#integrantes" class="ctn p-2">Ver más</a></div>
+        </div>
+        <div class="col-lg-6 col-md-12 d-flex justify-content flex-column">
+            <img src="./assets/img/img2.png" alt="" >
+            <div class="text-center fs-2">
+             
+            <h4 >Consejos/Comunidad</h4>
+            <div style="display:grid;grid-template-columns:1fr 1fr ">
+            <div >
+            <h5 class="fw-bold comunity">Para veterinarios</h5>
+            <p class="textoIndex"> -Protocolo Sanitario Covid<br>
+            -Programa de vacunación <br>
+          Tips para nuevo cachorro</p></div>
+         <div><h5 class="fw-bold comunity">Para clientes</h5>
+          <p class="textoIndex"> -Inseminación Artificial <br>
+          -Causas de vómitos <br>
+        -Síndrome brquicefálico canino</p></div> </div>
+        
+            <a href="http://www.vetsandiego.com.pe/consejos/" class="ctn p-2">Ver más</a></div>
+        </div>
+    </div>
+  </div>
   </section>
-
+    <hr>
+    <section class="gallary grid" >
+      <h2  class="titleIndex fw-bold" style="margin-top:30px">Galería</h2>
+      <div class="line"></div>
+      <div class="gallary__grid grid container" style="max-width:90%">
+        
+          <div class="gallary__item">
+         <a href="#" class="hero__cta">  <img src="./assets/img/panchoCavero.jpg" alt=""></a> 
+            <div class="gallary__item__description">
+              <h4>Fundador</h4>
+            </div>
+          </div>
+          
+          <div class="gallary__item">
+          <a href="#" class="hero__cta hero__cta2"><img src="./assets/img/donacion.jpg" alt=""></a>
+            <div class="gallary__item__description">
+              <h4>Donaciones</h4>
+            </div>
+          </div>
+        
+          <div class="gallary__item">
+            <img src="./assets/img/imagenLarga4.jpg" alt="">
+            <div class="gallary__item__description">
+              <h4>Tips para mejorar la relación con tu mascota</h4>
+           
+            </div>
+          </div>
+        
+          <div class="gallary__item">
+            <img src="./assets/img/campaña.jpg" alt="" style="width:480px">
+            <div class="gallary__item__description">
+              <h4>Campañas</h4>
+           
+            </div>
+          </div>
+        
+          <div class="gallary__item">
+            <img src="./assets/img/imagenLarga.jpg" alt="">
+            <div class="gallary__item__description">
+              <h4>Operaciones</h4>
+        
+            </div>
+          </div>
+        
+          <div class="gallary__item">
+            <img src="./assets/img/foto2.jpg" alt="">
+            <div class="gallary__item__description">
+              <h4>Animales para Adoptar</h4>
+          
+            </div>
+          </div>
+        
+          <div class="gallary__item">
+            <img src="./assets/img/sede.jpg" alt="">
+            <div class="gallary__item__description">
+              <h4>Sedes</h4>
+           
+            </div>
+          </div>
+        
+          <div class="gallary__item">
+            <img src="./assets/img/veterinaria.jpg" alt="">
+            <div class="gallary__item__description">
+              <h4>Hechos Importantes</h4>
+            
+            </div>
+          </div>
+        
+          <div class="gallary__item">
+            <img src="./assets/img/imagenMain.jpg" alt="">
+            <div class="gallary__item__description">
+              <h4>Características</h4>
+              
+            </div>
+          </div>
+          
+      </div>
+      
+    
+      </div>
+     
+    </section>
+  
+    <section class="modal">
+      <div class="modal__container">
+      <img src="./assets/img/panchoCavero.jpg" alt="" class="modal__img">
+    <h2 class="modal__title">Hola, soy Pancho Cavero</h2>
+    <p class="modal__paragraph">Médico Veterinario egresado de la Universidad Nacional Mayor de San Marcos, líder de opinión en temas de Neurología, traumatología y Ortopedia Veterinaria, Diplomado de Traumatología y Ortopedia en CEAMVET-México y realizó una pasantía en la Clínica San Juan de Dios, 2007. Expositor de innumerables Congresos de Medicina Veterinaria y como Infuencer en temas relacionados a los animales y el medio ambiente. Condecorado en el 2011 por la UNMSM, por su contribución en el desarrollo de la Medicina Veterinaria en el Perú y Medalla Cívica de la orden Santiago de Apóstol en “Reconocimiento al desarrollo de técnicas y procedimientos innovadores en el ejercicio de la Medicina Veterinaria” por la Municipalidad de Santiago de Surco 2005
+  
+      Comunicador y activista en pro del bienestar de los animales y promotor de la conservación de la biodiversidad del medio ambiente. </p>
+   <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
+  </section>
+  
+  <section class="modal modal2">
+    <div class="modal__container ">
+    <img src="./assets/img/donacion.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Donaciones</h2>
+  <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close ">Cerrar modal</a>
+  </div>
+  </section>
+  
   <section class="modal">
     <div class="modal__container">
-    <img src="./assets/img/panchoCavero.jpg" alt="" class="modal__img">
-  <h2 class="modal__title">Hola, soy Pancho Cavero</h2>
-  <p class="modal__paragraph">Médico Veterinario egresado de la Universidad Nacional Mayor de San Marcos, líder de opinión en temas de Neurología, traumatología y Ortopedia Veterinaria, Diplomado de Traumatología y Ortopedia en CEAMVET-México y realizó una pasantía en la Clínica San Juan de Dios, 2007. Expositor de innumerables Congresos de Medicina Veterinaria y como Infuencer en temas relacionados a los animales y el medio ambiente. Condecorado en el 2011 por la UNMSM, por su contribución en el desarrollo de la Medicina Veterinaria en el Perú y Medalla Cívica de la orden Santiago de Apóstol en “Reconocimiento al desarrollo de técnicas y procedimientos innovadores en el ejercicio de la Medicina Veterinaria” por la Municipalidad de Santiago de Surco 2005
-
-    Comunicador y activista en pro del bienestar de los animales y promotor de la conservación de la biodiversidad del medio ambiente. </p>
- <a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal modal2">
-  <div class="modal__container ">
-  <img src="./assets/img/donacion.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Donaciones</h2>
-<p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close ">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal">
-  <div class="modal__container">
-  <img src="./assets/img/imagenLarga4.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Tips para mejorar la relación con tu mascota</h2>
-<p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal">
-  <div class="modal__container">
-  <img src="./assets/img/campaña.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Campañas</h2>
-<p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal">
-  <div class="modal__container">
-  <img src="./assets/img/imagenLarga.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Operaciones</h2>
-<p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal">
-  <div class="modal__container">
-  <img src="./assets/img/foto2.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Animales para adoptar</h2>
-<p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal">
-  <div class="modal__container">
-  <img src="./assets/img/sede.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Sedes</h2>
-<p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal">
-  <div class="modal__container">
-  <img src="./assets/img/veterinaria.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Hechos Importantes</h2>
-<p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-<section class="modal">
-  <div class="modal__container">
-  <img src="./assets/img/imagenMain.jpg" alt="" class="modal__img">
-<h2 class="modal__title">Características</h2>
-<p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
-Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
-<a href="#" class="modal__close">Cerrar modal</a>
-</div>
-</section>
-
-
-
-
-
-  <hr>
-  <section class="ourteam text-center bg-aqua pt-lg-5 pl-lg-2">
-    <div class="ourteam__title  ">
-      <h2  class="titleIndex fw-bold">Más de 5 años de trayectoria</h2>
-      <div class="line"></div>
-    </div>
- 
-    <div class="ourteam__grid container grid-3">
-      <div class="row mt-5">
-      <div class="ourteam__item col-lg-4 col-xl-4  ">
-        <div class="ourteam__img"><img src="./assets/img/imagenesGrid3.jpg" alt=""></div>
-        <div class="ourteam__name"><h3>Bienestar Físico</h3></div>
-        <div class="ourteam__description"><p>El bienestar animal se basa en asegurar una buena alimentación, un buen alojamiento, una buena salud y un comportamiento apropiado. <br> <br>Las cinco libertades:
-          Libre de hambre y desnutrición.
-          Libre de miedos y angustia.
-          Libre de incomodidades físicas o térmicas.
-          Libre de dolor, lesiones o enfermedades.
-          Libre para poder expresar las conductas y pautas de comportamiento propias de su especie.</p></div>
-
-      </div>
-      <div class="ourteam__item col-lg-4 col-xl-4 ">
-        <div class="ourteam__img"><img src="./assets/img/imagenesGrid2 - copia.jpg" alt=""></div>
-        <div class="ourteam__name"><h3>Bienestar Mental</h3></div>
-        <div class="ourteam__description"><p>Factores para que tu animal tenga un bienestar mental: <br>-Enseñarle desde pequeño tus reglas o normas de casa. <br><strong>-"No pegarle"</strong>, corregirlo con un No o alguna palabra fuerte, pero no gritándole . <br>
- -Enseñarle a respetar a las personas y a los animales indefensos <br>-Sacarlo a pasear para evitar que tenga estrés y relacionarlo con otros animales.</p></div>
-   
-      </div>
-      <div class="ourteam__item col-lg-4 col-xl-4 ">
-        <div class="ourteam__img"><img src="./assets/img/imagenesGrid.jpg" alt=""></div>
-        <div class="ourteam__name"><h3>Medicina Individualizada</h3></div>
-        <div class="ourteam__description"><p>La medicina personalizada permitirá ahorrar una cantidad considerable de tiempo y dinero, pues podrá evitar la fase de ensayo y errores en el tratamiento médico. También contri- buirá a mejorar el manejo del paciente y a evitar efectos secundarios. <br>
-          Es una práctica emergente de la medicina que utiliza el perfil genético de un individuo para guiar las decisiones tomadas en relación con la prevención, diagnóstico y tratamiento de la enfermedad.</p></div>
- 
-      </div>
-    </div>
-  
-
+    <img src="./assets/img/imagenLarga4.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Tips para mejorar la relación con tu mascota</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
   </section>
+  
+  <section class="modal">
+    <div class="modal__container">
+    <img src="./assets/img/campaña.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Campañas</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
+  </section>
+  
+  <section class="modal">
+    <div class="modal__container">
+    <img src="./assets/img/imagenLarga.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Operaciones</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
+  </section>
+  
+  <section class="modal">
+    <div class="modal__container">
+    <img src="./assets/img/foto2.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Animales para adoptar</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
+  </section>
+  
+  <section class="modal">
+    <div class="modal__container">
+    <img src="./assets/img/sede.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Sedes</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
+  </section>
+  
+  <section class="modal">
+    <div class="modal__container">
+    <img src="./assets/img/veterinaria.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Hechos Importantes</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
+  </section>
+  
+  <section class="modal">
+    <div class="modal__container">
+    <img src="./assets/img/imagenMain.jpg" alt="" class="modal__img">
+  <h2 class="modal__title">Características</h2>
+  <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente adipisci provident sequi voluptate, natus delectus perspiciatis tempore ducimus hic ab quasi. Neque aspernatur magnam itaque recusandae eius dicta obcaecati.
+  Explicabo eos dignissimos quasi illo sapiente voluptatibus exercitationem odio, quod doloribus, dolor aliquid harum temporibus optio saepe vel sint esse! Eius, debitis vel eveniet voluptatum iure consectetur quisquam totam est.</p>
+  <a href="#" class="modal__close">Cerrar modal</a>
+  </div>
+  </section>
+  
+  
+  
+  
+  
+    <hr style="margin:16px 0px 64px">
+    <section class="ourteam text-center bg-aqua pt-lg-5 pl-lg-2">
+      <div class="ourteam__title  ">
+        <h2  class="titleIndex fw-bold">Más de 5 años de trayectoria</h2>
+        <div class="line"></div>
+      </div>
+   
+      <div class="ourteam__grid container grid-3" style="max-width: 90%;">
+        <div class="row mt-5">
+        <div class="ourteam__item col-lg-4 col-xl-4  ">
+          <div class="ourteam__img"><img src="./assets/img/imagenesGrid3.jpg" alt=""></div>
+          <div class="ourteam__name"><h3>Bienestar Físico</h3></div>
+          <div class="ourteam__description"><p>El bienestar animal se basa en asegurar una buena alimentación, un buen alojamiento, una buena salud y un comportamiento apropiado. <br> <br>Las cinco libertades:
+            Libre de hambre y desnutrición.
+            Libre de miedos y angustia.
+            Libre de incomodidades físicas o térmicas.
+            Libre de dolor, lesiones o enfermedades.
+            Libre para poder expresar las conductas y pautas de comportamiento propias de su especie.</p></div>
+  
+        </div>
+        <div class="ourteam__item col-lg-4 col-xl-4 ">
+          <div class="ourteam__img"><img src="./assets/img/imagenesGrid2 - copia.jpg" alt=""></div>
+          <div class="ourteam__name"><h3>Bienestar Mental</h3></div>
+          <div class="ourteam__description"><p>Factores para que tu animal tenga un bienestar mental: <br>-Enseñarle desde pequeño tus reglas o normas de casa. <br><strong>-"No pegarle"</strong>, corregirlo con un No o alguna palabra fuerte, pero no gritándole . <br>
+   -Enseñarle a respetar a las personas y a los animales indefensos <br>-Sacarlo a pasear para evitar que tenga estrés y relacionarlo con otros animales.</p></div>
+     
+        </div>
+        <div class="ourteam__item col-lg-4 col-xl-4 ">
+          <div class="ourteam__img"><img src="./assets/img/imagenesGrid.jpg" alt=""></div>
+          <div class="ourteam__name"><h3>Medicina Individualizada</h3></div>
+          <div class="ourteam__description"><p>La medicina personalizada permitirá ahorrar una cantidad considerable de tiempo y dinero, pues podrá evitar la fase de ensayo y errores en el tratamiento médico. También contri- buirá a mejorar el manejo del paciente y a evitar efectos secundarios. <br>
+            Es una práctica emergente de la medicina que utiliza el perfil genético de un individuo para guiar las decisiones tomadas en relación con la prevención, diagnóstico y tratamiento de la enfermedad.</p></div>
+   
+        </div>
+      </div>
+    
+  
+    </section>
+  
+    
+      </div>
 
   
-    </div>
-    
     <div class="footer__right">
       <footer class="footer1">
         <div class="flexFooter">
-        <section class="textoFooter">
-<div>
-            <p class="primeraLinea">  Teléfonos : 948-400626  </p>  <p>          
-               Correo: animalheart2@gmail.com  </p>   </div>                                  
-            
-            <p> Aviso legal | Hecho por Alvaro Prado</p>
-            <p>Horario de atención: Lunes a Sabado - 8 a.m. - 8 p.m. </p>
-          </div>
-       
-        </section>
+          <section class="textoFooter">
+            <div>
+                        <p class="primeraLinea">  Teléfonos : 948-400626  </p>  <p>          
+                           Correo: animalheart2@gmail.com  </p>   </div>                                  
+                        
+                        <p> Aviso legal | Hecho por Alvaro Prado</p>
+                        <p>Horario de atención: Lunes a Sabado - 8 a.m. - 8 p.m. </p>
+                      </div>
+                   
+                    </section>
         <div class="rounded-social-buttons">
-                          <a class="social-button facebook" href="https://www.facebook.com/alvaro.pradotenorio.1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                          <a class="social-button twitter" href="https://twitter.com/PradoTen3" target="_blank"><i class="fab fa-twitter"></i></a>
-                          <a class="social-button linkedin" href="https://www.linkedin.com/in/alvaro-tenorio-a41430223/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                          <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
                           <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                          <a class="social-button instagram" href="https://www.instagram.com/alvarop_code/" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                       </div>
                       
       </footer>
     </div>
-  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-  </body>
+
+</body>
 </html>

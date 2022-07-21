@@ -10,15 +10,1191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Veterinaria</title>
  <link rel="stylesheet" href="../CSS/main.css">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+
  <script src="https://kit.fontawesome.com/89479751d0.js" crossorigin="anonymous"></script>
  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+  
  <style>
     h1,h2{
       animation:flip; 
     animation-duration: 0.8s; 
     }
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Sniglet&display=swap');
+/* ===== Global ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color:rgb(59, 104, 163);
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: #375fa9b4;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html {
+    overflow-x: hidden;
+    font-family: 'Patrick Hand SC', cursive;
+    font-family: 'Sniglet', cursive;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0;
+}
+body>h1{
+  color:#456da9;
+}
+.header-content{
+  padding-top:0px;
+  text-align: center;
+}yyy
+/* Navbar */
+
+#menu a{
+  color:#1e3293d1
+}
+#menu a:hover{
+  
+  background-color:rgba(198, 198, 198, 0.794);
+ transition: all 0.1s;
+  color: #456da9;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navbar-nav{
+padding-right: 20px;
+}
+.nav-link{
+  margin-right:20px;
+  color:#456da9;
+}
+
+.ctn {
+  background: #6298cad6;
+    border-radius: 30px;
+    color: #f9fafb;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.liContacto{
+    
+  background-color:rgba(198, 198, 198, 0.794);
+        border-radius: 30px;
+
+}
+.liContacto a{
+margin-right:0px;
+}
+.line {
+  width: 150px;
+  height: 5px;
+  background: #0579c7;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* Events */
+
+h4 {
+    color: #456da9;
+    margin: 20px auto;
+    font-weight: bold;
+}
+p, .comunity {
+    color: #676767bf;
+}
+.textoIndex{
+  font-size: 18px;
+}
+.events .ctn {
+    margin-top: 30px;
+}
+
+.itemFlex1,.itemFlex2{
+  width: 500;
+  height: 350px;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 16px;
+ 
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(53, 124, 190, 0.694);
+
+  background-color: rgba(184, 209, 255, 0.515);
+}
+
+.btn:hover {
+  background:#27618da9;
+  border:  1px solid rgba(226, 232, 251, 0.694);
+  font-weight: bold;
+}
+/*Acá le ponemos un alto de 200px a mi ultima imagen de grid-container para que sean del mismo tamaño*/
+
+.miIcon:hover{
+  transform: none;
+}
+
+.ctn:hover {
+  background: whitesmoke;
+  color: #2c5fa6;
+  box-shadow: 2px 2px 5px #00000056;
+}
+
+/*Modal*/
+.modal, .modal2{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.modal--show{
+opacity: 1;
+pointer-events:unset ;
+transition: opacity .6s;
+}
+
+.modal__container, .modal__container2{
+  margin: auto;
+  width: 50%;
+max-width: 60%;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 3em 2.5em;
+  display:grid ;
+  gap: 1em;
+place-items: center;
+grid-auto-columns: 100%;
+}
+
+.modal__title{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.modal__paragraph{
+  margin-bottom:10px;
+}
+
+.modal__img{
+ 
+  width:50%;
+ max-width:80% ;
+ max-height: 90%;
+ min-width: 350px;
+}
+
+.modal__close{
+  text-decoration: none;
+  color:white;
+  background-color:#f26250;
+  padding:1em 3em ;
+  border:1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color .3s;
+}
+
+.modal__close:hover{
+  color: #f26250;
+  font-weight: bold;
+  background-color: white;
+}
+
+
+/*iconos del footer*/
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.titleIndex{
+  font-size:4vmin;
+  color: #456da9;
+
+}
+.rounded-social-buttons{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+/*footer del index*/
+.footer1{
+  background-color: rgb(25 81 151 / 87%);
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 62% 1fr;
+
+}
+
+.flexFooter{
+  display:flex;
+  justify-content:space-around;
+  line-height: 40px;
+}
+.textoFooter p{
+    color: #ffffff;
+    font-size:20px;
+   letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.textoFooter.primerLinea{
+  padding-bottom: 40px;
+}
+
+.line2{
+  height: 5px;
+  background: #f8f9fa;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/*galería*/
+.gallary {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.gallary__title {
+  padding: 0 10px;
+  margin: 50px 0;
+}
+
+.gallary__grid {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 150px);
+  grid-gap: 5px;
+  padding: 10px;
+}
+
+.gallary__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallary__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallary__item:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallary__item:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.gallary__item:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.gallary__item:nth-child(7) {
+  grid-column: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.gallary__item:nth-child(8) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 4;
+}
+
+.gallary__item__description {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 45px;
+  background: rgba(62, 62, 62, 0.7);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translate(1.0);
+}
+
+.gallary__item__description h4 {
+  color: #fbfbfb;
+  font-weight: bold;
+  font-size:22px;
+}
+
+.gallary__item__description p {
+  font-size: 14px;
+  color: white;
+}
+
+.gallary__item:hover .gallary__item__description {
+  opacity: 1;
+  bottom: 0;
+}
+
+.gallary__button {
+  padding: 50px 10px;
+}
+
+.ourteam__grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding-bottom: 50px;
+}
+
+.ourteam__item {
+  background: white;
+
+  border: solid 3px;
+  border-color: #E6F3E3;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.ourteam__item:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+ 
+  transition:scale(0.5seg);
+
+  border-color: #4ab1ff;
+}
+
+.ourteam__img {
+  width: 100%;
+  height: 240px;
+}
+
+.ourteam__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ourteam__name {
+  padding: 20px 10px;
+}
+.grid{
+  display:grid;
+}
+.ourteam__description {
+  font-size: 16px;
+  padding: 0 30px 20px;
+  line-height: 1.7;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+
+}
+
+/*SECCIONES DEL HTML*/
+
+/*estilos de nosotros */
+
+button {
+  background: #3f6fab;
+  border: 0;
+  padding: 10px 20px;
+}
+
+.card_image>img {
+  max-width: 100%;
+  width: 600px;
+  height: 310px;
+}
+
+.wrapper {
+  display: grid;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 16, 16, .4)) , url(../assets/img/imagenVeterinarios.jpg);
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 20px;
+  background-position: top;
+}
+
+/* NAVIGATION */
+
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  font-weight: bold;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.menu a {
+  background: var(--lightblue);
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: var(--black);
+  font-size: 20px;
+}
+
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.feature {
+  background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius:20px;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+
+.feature .icon {
+  font-size: 50px;
+}
+
+.feature p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT SECTIONS */
+
+.aboutWe {
+  background: white;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 100px;
+}
+
+h2.miFuenteWe{
+
+font-size: 32px;
+color: #456da9;
+}
+.lineWe{
+
+  margin-bottom:50px;
+width: 150px;
+height: 4px;
+background: #0579c7;
+margin: 10px auto;
+border-radius: 5px;
+}
+
+.albums{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.album {
+  display: grid;
+
+  grid-gap: 10px;
+  align-items: center;
+  background-color: rgba(255,255,255,0.2);
+  padding: 15px 20px;
+  justify-content: center;
+}
+
+.album p {
+  font-weight: 100;
+  text-align: center;
+}
+
+.album__details {
+  justify-items: start;
+}
+
+/*estilos de Farmacia Veterinaria*/
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 4fr));
+  gap: 2rem;
+  margin-bottom: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+div>.btn {
+  background-color: #ffffff8d;
+  color: #084298;
+}
+
+.titleFarmacy{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  font-size:42px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.lineFarmacy{
+ 
+    width: 150px;
+    height: 4px;
+    background: #0579c7;
+    margin: 10px auto;
+    border-radius: 5px;
+    display:inline-block;
+  margin-left: 125px;
+}
+
+.box-container .box {
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+
+border-radius:20px
+}
+
+.box-container .box .image {
+  height: 13rem;
+  overflow: hidden;
+ 
+}
+
+.box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  border-radius:20px 20px 0px 0px;
+ 
+}
+
+.box-container .box .info {
+ text-align: center;
+}
+
+.box-container .box .info h3 {
+  font-size: 18px;
+  color:#41464bd1;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.box-container .box .info p {
+  margin-top: 1rem;
+  
+}
+
+/*search*/
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  left: 12%;
+
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  border-radius: 20px 0 0 20px;
+
+  min-width: 300px;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.buscador{
+  display:flex;
+  margin-top: 50px;
+  margin-bottom:30px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/*¡Cambia el tamaño de la envoltura para ver el cambio de la barra de búsqueda!*/
+.wrap{
+  position: relative;
+
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 3fr));
+
+  margin-bottom: 50px;
+  margin-left: 60px;
+ margin-right: 50px;
+}
+
+.row2 #cat-farmacia h3{
+ color: rgba(46, 81, 150, 0.882);
+ background-color: rgb(185, 189, 199);
+ border-radius:20px ;
+ padding: 5px;
+ margin: 5px;
+ display:flex;
+justify-content:center;
+font-size: 18px;
+font-weight: bold;
+
+}
+
+/*efecto hover con shadow para darle un sombreado a mis cards para que tenga mas estilo*/
+div.box:hover{
+  -webkit-box-shadow: 0 0 11px 6px rgb(0 0 0 / 5%);
+}
+.box-container .box .btn {
+  padding: 0 3%;
+  margin-top: 15px;
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+}
+
+/*Estilos de servicios*/
+
+#services {
+height: 70vh;
+padding-top: 50px;
+
+}
+
+.fondoSeccion{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(16, 16, 16, .3)) , url("../assets/img/fondoCarrusel4.jpg");
+color:white;
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom:100px;
+  padding-top:100px;
+ 
+}
+.fondoSeccion h1{
+  display:flex;
+  justify-content:center;
+  font-size: 7vmin;
+}
+.fondoSeccion h2{
+  display:flex;
+  justify-content:center;
+  font-size: 4vmin;
+}
+
+.services-box {
+float: left;
+width: 33%;
+padding: 2px;
+padding-bottom: 20px;
+}
+
+.lineServices {
+  width: 150px;
+  height: 4px;
+  background: #0579c7;
+  margin: 10px auto;
+  border-radius: 5px;
+ 
+}
+
+.miTitulo{
+background-color:white ;
+padding: 20px;
+
+}
+
+.services-box img {
+width: 100%;
+padding-bottom: 20px;
+border-radius: 30px;
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content:center;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background: linear-gradient(to bottom right, #bdcbd6 -40%, #27618d 100%);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  
+  align-items: center;
+}
+
+.card_content {
+  padding: 1rem;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+  gap: 18px;
+
+}
+
+.botonServices{
+  display:flex;
+  justify-content: center;
+}
+
+.card_btn{
+  width: 200px;
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+}
+
+.card_text {
+  color: #ffffff;
+
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+  text-align: center;
+}
+
+.cards_item {
+  width: 30%;
+}
+@media (max-width:1400px) {
+  .cards_item {
+    width: 50%;
+  }
+  .hero{
+    min-height: 60vh;
+  }
+}
+/*index:
+/*tablet*/
+@media only screen and (max-width:1070px){
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 17px;
+    }
+
+    .nav-links li{
+    margin-right: 5px;
+  }
+
+    .miIcon{
+      margin-top: 10px;
+      min-width: 300px;
+      margin-right: 0px;
+      position:static;
+    }
+
+    #menu a{
+      font-size:16px;
+    }
+    .cards_item {
+      width: 50%;
+    }
+   /*Nosotros*/
+   .aboutWe{
+    grid-template-columns: 1fr;
+   }
+ 
+    @media (max-width: 1000px) {
+      .menu {
+        order: -1;
+        perspective: 800px;
+      }
+    
+      [aria-controls="menu-list"] {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .aboutWe {
+        background: white;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: center;
+    }
+      .about__details{
+        display:flex;
+        justify-content:center;
+      }
+      .cards_item {
+        width: 60%;
+ 
+      }
+
+      .features {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+
+/* Mobile device */
+@media only screen and (max-width:900px){
+ 
+}
+.ourteam__desctiption {
+  padding: 0 10px 20px;
+  line-height: 1.4;
+}
+.footer1{
+  background-color: rgb(25 81 151 / 87%);
+    display: grid;
+    padding: 30px;
+    grid-template-columns:1fr;
+
+}
+.rounded-social-buttons{
+  display:flex;
+  align-items: center;
+  justify-content:space-evenly;
+  padding-top:30px;
+}
+.flexFooter{
+  text-align: center;
+}
+.textoFooter p{
+  font-size:17px
+}
+/*SERVICIOS-mobile*/
+.fondoSeccion{
+height: 65vh;
+}
+
+.headerServices{
+  height:70vh;
+  width: 100vw;
+  
+}
+
+a.active, a{
+    color:#7f7f7f;
+    font-weight: bold;
+}
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+        background-color:rgb(65, 106, 168);
+        height: 800px;
+    padding-top: 300px;
+    padding-bottom: 200px;
+        
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    /* Events */
+    .row {
+        flex-direction: column;
+        padding-left: 25px;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 80%;
+    }
+    /* explore */
+    .explore-content {
+        width: 100%;
+    }
+    .tours .col {
+        width: 100%;
+    }
+   
+    .footer {
+        padding: 10px;
+    }
+}
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+
+.ctn:hover {
+    background: whitesmoke;
+    color: #2c5fa6;
+    box-shadow: 2px 2px 5px #00000056;
+}
+li:hover {
+    color: #426ca2;
+    cursor: pointer;
+}
+
+/*nosotros*/
+.header-nosotros{
+  margin-bottom: 100px;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+}
+h1.tituloNosotros{
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.hero{
+  min-height: 50vh;
+}
+
+h2.subtituloNosotros{
+  font-size: 4vmin;
+}
+.card-img-overlay{
+  position:none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.cards_item {
+  width: 80%;
+  justify-content: center;
+}
+
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+  .header__container {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+  }
+  a.active,
+  a.active:hover {
+    color: #3e6ea2;
+    border-bottom: none;
+  }
+  a.active::before,
+  a.active:hover::before {
+    border-bottom: none;
+  }
+ 
+  .about__container {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .about__button {
+    text-align: center;
+  }
+  .ourteam__grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .ourteam__img img {
+    object-position: 50% 70%;
+  }
+  .ourteam__socials {
+    opacity: 1;
+  }
+
+  .card_image>img {
+max-width: 100%;
+width: 600px;
+height: 250px;
+  }
+/*Servicios*/
+.headerServices{
+  height:55vh;
+}
+.fondoSeccion{
+  height:55vh;
+}
+/*Nosotros*/
+.hero{
+  min-height: 40vh;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+  .logo {
+    font-size: 22px;
+  }
+  .logo a span {
+    font-size: 24px;
+  }
+  .gallary__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 200px);
+  }
+  .gallary__item:nth-child(5) {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+  .miIcon{
+    width:300px;
+  }
+  .textoFooter p{
+    font-size:14px;
+  }
+/*Servicios*/
+
+.fondoSeccion{
+  height:35vh;
+}
+
+.headerServices{
+  width:100%;
+  height:40vh;
+}
+/*Nosotros*/
+.hero{
+  min-height: 300px;
+}
+
+}
+
   </style>
 
 </head>
