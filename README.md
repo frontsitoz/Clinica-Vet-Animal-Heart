@@ -8,6 +8,7 @@ _Esta es una de mis primeras páginas utilizando HTML,CSS, BOOSTRAP, SASS Y JS_
 ![](https://img.shields.io/github/license/Alvarows20/Clinica-Vet-Animal-Heart)
 ![](https://img.shields.io/github/issues/Alvarows20/Clinica-Vet-Animal-Heart)
 [![](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FPradoTen3)](https://twitter.com/PradoTen3)
+<br><br><br>
 [![](https://user-images.githubusercontent.com/88502429/201449385-c72b1d50-0037-4542-b35f-82f9d970a39f.png)](https://alvarows20.github.io/Clinica-Vet-Animal-Heart/)
  <br />
 
