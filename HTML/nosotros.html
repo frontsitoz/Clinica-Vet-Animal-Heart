@@ -62,14 +62,7 @@ body>h1{
 #menu a{
   color:#1e3293d1
 }
-#menu a:hover{
-  
-  background-color:rgba(198, 198, 198, 0.794);
- transition: all 0.1s;
-  color: #456da9;
-  border-radius: 30px;
-  padding: 10px;
-}
+
 
 .container-fluid{
   padding-left: 0px;
@@ -268,6 +261,7 @@ grid-auto-columns: 100%;
   color: #456da9;
 
 }
+
 .rounded-social-buttons{
   display:flex;
   justify-content: space-evenly;
@@ -491,7 +485,9 @@ button {
 .wrapper {
   display: grid;
 }
-
+.album__artwork{
+  border-radius: 20px;
+}
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 16, 16, .4)) , url(../assets/img/imagenVeterinarios.jpg);
@@ -540,8 +536,8 @@ button {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-margin-left: 10px;
-margin-right: 10px;
+margin-bottom: 30px;
+padding: 20px;
 }
 
 .feature {
@@ -1232,7 +1228,7 @@ height: 250px;
       
       </div>
 
-      <section class="features" style="margin-bottom: 50px">
+      <section class="features" >
         <div class="feature">
           <span class="icon">🐕</span>
           <h3>Más de 2000 rescates</h3>
